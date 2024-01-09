@@ -5,9 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
+    <header>
+
+        <form onsubmit="return false">
+            <h1>fake&M</h1>
+            <div>
+                <input type="text" name="input" id="input">
+                <select name="sortby" id="sortby">
+                    <option value="0">sort by</option>
+                    <option value="1">price: low to high</option>
+                    <option value="2">price: high to low</option>
+                </select>
+            </div>
+        </form>
+        <div class="categories">
+            <p>Filter by Categories:</p>
+            <div>
+                <button onclick="electronics()">electronics</button>
+                <button onclick="jewelery()">jewelry</button>
+                <button onclick="mensClothing()">men's clothing</button>
+                <button onclick="womensClothing()">women's clothing</button>
+            </div>
+        </div>
+
+    </header>
+    <div id="productsOutput">
+
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
 
