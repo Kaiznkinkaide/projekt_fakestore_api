@@ -12,7 +12,6 @@ const apiFetch = (apiLink) => {
     fetch(apiLink)
     .then(res=>res.json())
     .then(data=> {
-        console.log(data);
         let productArray = [...data]
         sortFunction(productArray)
         search(productArray)
