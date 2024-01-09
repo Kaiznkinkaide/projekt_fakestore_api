@@ -31,8 +31,12 @@ form {
     justify-content: center;
 }
 
-.categories {
+form div {
     padding: 3vh;
+}
+
+.categories {
+    padding: 0 3vh 3vh 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,4 +93,8 @@ button {
     padding: 5px;
     color: white;
     background-color: black;
+}
+
+input[type="text"] {
+    border-radius: 5px;
 }
